@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+.text-pop-up-top {
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.face-1 {
+    transform: translateZ(100px)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.face-2 {
+    transform: rotateY(90deg) translateZ(100px)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.face-3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px)
 }
 
-.App-link {
-  color: #61dafb;
+.face-4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.face-5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px)
 }
+
+.face-6 {
+    transform: rotateX(-90deg) translateZ(100px)
+}
+
+@media only screen and (max-width: 600px) {
+
+.face-1 {
+    transform: translateZ(75px)
+}
+
+.face-2 {
+    transform: rotateY(90deg) translateZ(75px)
+}
+
+.face-3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(75px)
+}
+
+.face-4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(75px)
+}
+
+.face-5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(75px)
+}
+
+.face-6 {
+    transform: rotateX(-90deg) translateZ(75px)
+}
+}
+
+/* .cube:hover .face-1 {
+    transform: translateZ(150px)
+}
+
+.cube:hover .face-2 {
+    transform: rotateY(90deg) translateZ(150px)
+}
+
+.cube:hover .face-3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(150px)
+}
+
+.cube:hover .face-4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(150px)
+}
+
+.cube:hover .face-5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px)
+}
+
+.cube:hover .face-6 {
+    transform: rotateX(-90deg) translateZ(150px)
+} */
+
+.text-animate {
+    opacity: 0;
+}
+
+.text-animate._1 {
+    opacity: 1;
+    animation-delay: 3s;
+}
+
+.text-animate._2 {
+    opacity: 1;
+    animation-delay: 4s;
+}
+
+.text-animate._3 {
+    opacity: 1;
+    animation-delay: 5s;
+}
+
+.text-animate._4 {
+    opacity: 1;
+    animation-delay: 6s;
+}
+
+.text-animate._5 {
+    opacity: 1;
+    animation-delay: 7s;
+}
+
+.text-animate._6 {
+    opacity: 1;
+    animation-delay: 8s;
+}
+
+.text-animate._7 {
+    opacity: 1;
+    animation-delay: 9s;
+}
+
+.text-animate._8 {
+    opacity: 1;
+    animation-delay: 10s;
+}
+
+.text-animate._9 {
+    opacity: 1;
+    animation-delay: 11s;
+}
+
+
+
+.profile_class span {
+    width: 35%;
+}
+
+@keyframes Spincube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(100deg);
+    }
+
+
+
+    50% {
+        transform: rotateY(180deg) rotateZ(90deg);
+    }
+
+
+
+    83% {
+        transform: rotateY(90deg) rotateZ(90deg);
+    }
+}
+
+.boxx {
+    animation: Spincube;
+    animation-timing-function: easeInOut;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50%-100px)
+}
+
+.profile_class .profile_values,
+.profile_class .profile_values a {
+    color: #35c071;
+    width: 70%;
+
+}
+
+.profile_class.networks {
+    justify-content: space-between !important;
+    margin-top: 20px;
+    margin-left: calc(50% - 100px);
+}
+
+.profile_linkedIn {
+    margin-right: 10px;
+}
+
+.skill {
+    font-size: 20px;
+}
+
+
+
