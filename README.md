@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-To Acces webpage : https://nagendra-ui.github.io/React-portfolio/
+View My Portfolio : https://nagendra-ui.github.io/React-portfolio/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
